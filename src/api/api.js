@@ -8,9 +8,9 @@ export async function createRegister(data) {
   }
 }
 
-export async function getRegistersCategories() {
+export async function getRegistersTypes() {
   try {
-    const res = await axios.get(`${BASE_URL}/financeCategory/getAll`);
+    const res = await axios.get(`${BASE_URL}/financeType/getAll`);
 
     return res.data;
   } catch (err) {

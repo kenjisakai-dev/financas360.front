@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Source Code Pro";
-  src: url("fontSourceCodePro/SourceSans3-VariableFont_wght.ttf");
+  src: url("../fonts/sourceCodePro/SourceSans3-VariableFont_wght.ttf");
 }
 
 * {
