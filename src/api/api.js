@@ -1,0 +1,19 @@
+import { BASE_URL } from "../config/config.js";
+
+export async function createRegister(data) {
+  try {
+    await axios.post(`${BASE_URL}/financeRegistry`, data);
+  } catch (err) {
+    console.log(`Erro ao criar registro: ${err?.message}`);
+  }
+}
+
+export async function getRegistersCategories() {
+  try {
+    const res = await axios.get(`${BASE_URL}/financeCategory/getAll`);
+
+    return res.data;
+  } catch (err) {
+    console.log(`Erro ao obter os tipos: ${err?.message}`);
+  }
+}

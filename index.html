@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastrar Registro</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h2>Criar Registro</h2>
+
+      <form id="registry-form" action="">
+        <label for="registry-date">Data do registro</label>
+        <input type="date" id="registry-date" required />
+
+        <label for="registry-value">Título do registro</label>
+        <input
+          type="text"
+          id="registry-title"
+          placeholder="Descreva o título"
+          required
+        />
+
+        <label for="registry-value">Valor do registro</label>
+        <input
+          type="number"
+          id="registry-value"
+          step="0.01"
+          placeholder="0.00"
+          required
+        />
+
+        <label for="registry-type">Tipo do registro</label>
+        <select name="registry-type" id="registry-type" required>
+          <option value="" disabled selected>Selecione um tipo</option>
+        </select>
+
+        <label for="registry-category">Categoria do registro</label>
+        <select
+          name="registry-category"
+          id="registry-category"
+          disabled
+          required
+        >
+          <option value="" disabled selected>Selecione uma categoria</option>
+        </select>
+
+        <button type="submit" id="registry-send">Enviar</button>
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

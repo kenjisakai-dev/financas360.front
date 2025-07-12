@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("fontSourceCodePro/SourceSans3-VariableFont_wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --charcoal: rgb(34, 40, 49);
+  --charcoal-blue: rgb(49, 54, 63);
+  --gainsboro: rgb(238, 238, 238);
+  --cadet-blue: rgb(118, 171, 174);
+  --cadet-blue-hover: rgb(90, 130, 133);
+}
+
+body {
+  background-color: var(--charcoal);
+}
+
+body * {
+  font-family: "Source Code Pro";
+  font-weight: 800;
+}
+
+#container {
+  width: 320px;
+  margin: 50px auto 0;
+  padding: 10px;
+}
+
+h2 {
+  color: var(--cadet-blue);
+  margin-bottom: 12px;
+}
+
+label {
+  display: block;
+  color: var(--gainsboro);
+  margin-bottom: 2px;
+}
+
+#registry-send {
+  display: block;
+  padding: 12px;
+  background: var(--cadet-blue);
+  color: var(--gainsboro);
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+#registry-send:hover {
+  background: var(--cadet-blue-hover);
+}
+
+label,
+input,
+select,
+button {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+}
+
+input,
+select {
+  outline: none;
+  color: var(--charcoal-blue);
+}
+
+input[type="date"],
+input[type="text"],
+input[type="number"],
+select {
+  background-color: var(--gainsboro);
+  padding: 10px 8px;
+  margin-bottom: 10px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
